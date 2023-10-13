@@ -23,7 +23,7 @@ Fasi
   
      ]
   
-     frigo.push('pesca');
+frigo.push('pesca');
      document.getElementById("Frigo").innerHTML = frigo;
      console.log(frigo)
      let trovato = false
@@ -36,7 +36,5 @@ Fasi
      } else  {
           msg = "Oh no, devo uscire a comprare il cocomero!"
      }
-
-//
 
  
