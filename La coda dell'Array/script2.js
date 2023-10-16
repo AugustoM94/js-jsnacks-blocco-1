@@ -33,8 +33,8 @@ if (isNaN(numElementi) || numElementi <= 0) {
   }
 }
  */
-let generaArray = document.querySelector('#GeneraArray');
-let stampaNumeri = document.querySelector('#stampaNumeri');
+let generaArray = document.getElementById('GeneraArray');
+let stampaNumeri = document.getElementById('stampaNumeri');
 let arrayGenerato = [];
 
 generaArray.addEventListener('click', function () {
@@ -42,7 +42,6 @@ generaArray.addEventListener('click', function () {
 
     if (isNaN(numElementi)) {
         alert("Inserisci un numero valido.");
-        return;
     }
 
     arrayGenerato = [];
@@ -52,12 +51,11 @@ generaArray.addEventListener('click', function () {
     document.getElementById('risultato').innerHTML = "Array generato: " + arrayGenerato;
 })
 
-stampaNumeri.addEventListener('click',function () {
+stampaNumeri.addEventListener('click', function () {
     const numStampa = parseInt(document.getElementById('numStampa').value);
 
     if (isNaN(numStampa) || numStampa <= 0) {
         alert("Inserisci un numero valido e maggiore di 0.");
-        return;
 }
 
     const ultimiNumeri = arrayGenerato.slice(-numStampa);

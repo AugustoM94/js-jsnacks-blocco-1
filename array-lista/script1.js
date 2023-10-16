@@ -22,7 +22,6 @@
        if (frigo[i] === 'cocomero') {
          trovato = true;
          msg = "Trovato! Devo solo preparare il cocktail.";
-         break; // Esci dal ciclo una volta trovato il cocomero
        } else {
          msg = "Oh no, devo uscire a comprare il cocomero!";
        }
